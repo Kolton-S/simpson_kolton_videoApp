@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="stylesheets/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="stylesheets/main.css">
+  <link rel="stylesheet" href="stylesheets/hover.css">
+  {{#if cms}}
+    <link rel="stylesheet" href="stylesheets/form.css">
+  {{/if}}
+
+  <title>{{ title }}</title>
+
+</head>
+<body>
+  <nav id="mainNav">
+    <ul>
+      <li><a href="http://roku.com" target="_blank"><img src="images/roku.png" id="rokuLogo" alt="roku"></a></li>
+      <li><a href="/"><img src="images/flashback.png" id="flashbackLogo" alt="flashback"></a></li>
+      <li><img src="images/person.png" id="profile" alt="person"></li>
+      <li><img src="images/hamburger.png" id="menu" alt="menu"></li>
+      <li><img src="images/settings.png" id="settings" alt="settings"></li>
+    </ul>
+    <img src="images/divider.png" class="divider" alt="divider">
+  </nav>
+  {{{ body }}}
+
+  <footer id="mainFooter">
+    <a href="http://roku.com" target="_blank"><img src="images/rokuBW.png" alt="roku" id="rokuLogoBW"></a>
+    <h2 id="copyrightText">Copyright Flashback 2018</h2>
+  </footer>
+  {{#if cms}}
+  <script src="javascripts/main.js"></script>
+  {{/if}}
+
+  {{#if cms}}
+  <script src="javascripts/cmsHandler.js"></script>
+  {{/if}}
+<script src="javascripts/main.js"></script>
+</body>
+</html>

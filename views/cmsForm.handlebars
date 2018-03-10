@@ -1,0 +1,23 @@
+<a href="/">
+  <i class="fa fa-home"></i>
+</a>
+
+<article>
+  <img class="logo" src="images/mini-cooper.png">
+  <h4>Enter some new model info and then click "Post Data"</h4>
+  <div>
+      <form id="testForm" enctype="multipart/form-data" method="post" name="fileinfo">
+        <label>Mini Model (short):</label>
+        <input type="text" autofocus name="model" placeholder="enter model ex. F56" required size="32" maxlength="64" /><br />
+        <label>Model Name (long):</label>
+        <input type="text" name="modelName" size="12" placeholder="enter product name ex mini cooper F56" maxlength="32" /><br />
+        <label>Pricing:</label>
+        <input type="text" name="pricing" required placeholder="enter price" />
+        <label>Description:</label>
+        <textarea type="text" name="modelDetails" required placeholder="enter description"></textarea>
+        <label>Image:</label>
+        <input type="text" name="imgPath" required placeholder="enter image"/>
+        <input class="add-data" type="submit" value="Post Data"/>
+      </form>
+  </div>
+</article>

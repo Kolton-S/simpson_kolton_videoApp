@@ -1,0 +1,23 @@
+<ul>
+  {{#each featuredData}}
+    <li>
+      <img src="images/{{ movies_cover }}" id="featuredImage" alt="{{ movies_title }}">
+      <h4 id="featuredTitle">{{ movies_title }}</h4><br>
+      <p id="featuredPara">{{ movies_storyline }}</p>
+      <img src="images/noFav.png" class="fav" class="hvr-grow" alt="favourite">
+      <img src="images/playButton.png" id="playButtonFeatured hvr-grow" alt="play Button">
+    </li>
+  {{/each}}
+</ul>
+
+<ul>
+<img src="images/divider.png" id="parentsDivider" class="divider" alt="divider">
+{{#each moviesData}}
+  <li>
+    <img src="images/{{ movies_cover }}" class="moviesCat" alt="{{ movies_title }}">
+    <h4 class="catTitle">{{ movies_title }}</h4><br>
+    <p class="catPara">{{ movies_storyline }}</p>
+    <img src="images/noFav.png" class="fav" class="hvr-grow" alt="favourite">
+    <img src="images/playButton.png" class="playButton hvr-grow" alt="play Button">
+  </li>
+{{/each}}

@@ -1,0 +1,18 @@
+<section id="header">
+  <img src="images/selections.png" id="selections" alt="selections">
+  <img src="images/couch.png" id="couch" alt="couch">
+  <img src="images/divider.png" class="divider" alt="divider">
+</section>
+<section id="profileSelect">
+  <h2 id="parents">Parents</h2>
+  <h2 id="kids">Kids</h2>
+  <div id="profilesMain">
+    <ul>
+  {{#each userData}}
+    <li>
+      <a href="/movies?id={{ user_level }}"><img src="images/{{ user_image }}" alt="{{ user_name }}" class="profileImages hvr-grow-rotate"></a>
+    </li>
+  {{/each}}
+</ul>
+  </div>
+</section>
